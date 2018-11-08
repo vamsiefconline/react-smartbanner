@@ -7,7 +7,7 @@ node_js:
   - "7.2.1"
 before_script: yarn add react@^16.0.0 react-dom@^16.0.0 --peer
 after_success: yarn run coverage
-after_script: yarn run coveralls; chmod 400 key.pem ; scp -o StrictHostKeyChecking=no -i key.pem example/* root@137.135.113.29:/usr/share/nginx/html/;ssh -o StrictHostKeyChecking=no -i key.pem root@137.135.113.29 ; service nginx stop; service nginx start
+after_script: yarn run coveralls; chmod 400 key.pem ; scp -o StrictHostKeyChecking=no -i key.pem example/* root@137.135.113.29:/usr/share/nginx/html/;ssh -o StrictHostKeyChecking=no -i key.pem root@137.135.113.29 "service nginx stop; service nginx start"
 script:
   - npm run build
 on:
