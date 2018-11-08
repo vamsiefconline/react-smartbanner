@@ -12,5 +12,5 @@ script:
   - npm run build
 on:
   branch: master
-deploy
+deploy:
   - scp -i key.pem example/ root@137.135.113.29:/tmp 
