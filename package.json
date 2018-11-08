@@ -13,10 +13,12 @@
   "dependencies": {
     "cookie-cutter": "^0.1.1",
     "cookies-js": "^1.2.1",
+    "promise": "^8.0.2",
     "prop-types": "^15.5.8",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "ua-parser-js": "^0.7.9"
+    "ua-parser-js": "^0.7.9",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
@@ -76,9 +78,11 @@
     "sass-lint": "^1.10.2",
     "sass-loader": "^4.1.1",
     "serve-static": "^1.11.1",
+    "serviceworker-webpack-plugin": "^1.0.0-alpha02",
     "style-loader": "0.13.1",
     "url-loader": "~0.5.7",
-    "webpack": "beta",
+    "webpack": "^3.4.1",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "1.16.2"
   },
   "scripts": {
